@@ -1,8 +1,10 @@
 package com.example.dialogosapp;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -29,14 +31,23 @@ public class MainActivity extends AppCompatActivity {
     }
     private void mostrarDialogo() {
         AlertDialog.Builder constructorDialogo = new AlertDialog.Builder(MainActivity.this);
-        constructorDialogo.setTitle("Diálogo Básico");
-        constructorDialogo.setMessage("¿Quieres aceptar o cancelar?");
-        constructorDialogo.setPositiveButton("Aceptar", (dialog, which) -> {
-            Toast.makeText(MainActivity.this, "Has aceptado", Toast.LENGTH_SHORT).show();
+        constructorDialogo.setTitle(R.string.Dialogo_titulo);
+        constructorDialogo.setMessage(R.string.Muestra_mensaje);
+        constructorDialogo.setPositiveButton(R.string.Aceptar, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText(MainActivity.this, R.string.T_aceptar, Toast.LENGTH_SHORT).show();
+            }
         });
-        constructorDialogo.setNegativeButton("Cancelar", (dialog, which) -> {
-            Toast.makeText(MainActivity.this, "Has cancelado", Toast.LENGTH_SHORT).show();
+
+        constructorDialogo.setNegativeButton(R.string.Cancelar, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText(MainActivity.this, R.string.T_cancelar, Toast.LENGTH_SHORT).show();
+            }
         });
+
         constructorDialogo.show();
+
     }
 }

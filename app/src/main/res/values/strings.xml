@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">DialogosApp</string>
-    <string name="Dialogo_Basico">Dialogo básico</string>
+    <string name="Dialogo_boton">Mostrar diálogo básico</string>
+    <string name="Dialogo_titulo">Diálogo Básico</string>
+    <string name="Muestra_mensaje">¿Quieres aceptar o cancelar el diálogo?</string>
+    <string name="Aceptar">Aceptar</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="T_aceptar">Has acceptado</string>
+    <string name="T_cancelar">Has cancelado</string>
 </resources>
