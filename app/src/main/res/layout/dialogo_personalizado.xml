@@ -3,27 +3,28 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp">
+    style="@style/RegistroLayoutStyle">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
+        android:orientation="horizontal"
         android:paddingTop="8dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="end"
             android:text="@string/Nombre_text"
-            android:gravity="end"/>
+            style="@style/TextViewStyle"/>
 
         <EditText
             android:id="@+id/etNombre"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_weight="1"
-            android:hint="@string/hint_nombre"/>
+            android:hint="@string/hint_nombre" />
     </LinearLayout>
 
     <LinearLayout
@@ -37,7 +38,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Usuario_text"
-            android:gravity="end"/>
+            android:gravity="end"
+            style="@style/TextViewStyle"/>
 
         <EditText
             android:id="@+id/etUsuario"
@@ -58,7 +60,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Telefono_text"
-            android:gravity="end"/>
+            android:gravity="end"
+            style="@style/TextViewStyle"/>
 
         <EditText
             android:id="@+id/etTelefono"
@@ -80,7 +83,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/email_text"
-            android:gravity="end"/>
+            android:gravity="end"
+            style="@style/TextViewStyle"/>
 
         <EditText
             android:id="@+id/etEmail"
@@ -102,7 +106,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Contrasena_text"
-            android:gravity="end"/>
+            android:gravity="end"
+            style="@style/TextViewStyle"/>
 
         <EditText
             android:id="@+id/etContrasena"
